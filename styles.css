@@ -1,0 +1,150 @@
+#css-zen-garden {
+    background-color: #334;
+     font-family: sans-serif;
+     color: white;
+     background-image: url("https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616_960_720.jpg");
+     background-repeat: no-repeat;
+     height: 100%;
+       background-size: cover;
+       background-position: 50% 25%;
+       padding: 3em;
+  
+ }
+ 
+ #zen-intro {
+   display: flex;
+   background-color: #224;
+   border-radius: 35px;
+ 
+ }
+ 
+ header {
+   padding-right: 20px;
+ 
+ }
+ 
+ h1 {
+   font-size: 250%;
+   text-align: center;
+   font-family: 'Nova Square', cursive;
+   color: #f09f05;
+ 
+ }
+ 
+ h2 {
+   text-align: center;
+   font-style: italic;
+   font-size: 120%;
+ }
+ h2 abbr {
+   color: #f09;
+ }
+ 
+ h2 abbr:hover {
+   color: red;
+   animation-name: grow2;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+ }
+ @keyframes grow2 {
+   from{
+     font-size: 100%;
+   }
+   to{
+     font-size: 105%;
+   }
+ }
+ 
+ #zen-summary {
+   padding-right: 15px;
+   padding-top: 25px;
+ }
+ 
+ #zen-summary a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: 'Nova Square';
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+ }
+ 
+ #zen-summary a:hover {
+   color: #f09f05;
+   animation-duration: 0.5s;
+   animation-name: grow;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+ }
+ @keyframes grow {
+   from{
+     font-size: 100%;
+   }
+   to{
+     font-size: 105%;
+   }
+ }
+ 
+ 
+ 
+ h3 {
+   font-family: 'Nova Square';
+   font-size: 130%;
+   color: #f09f05;
+   text-align: center;
+ }
+ 
+ #zen-preamble {
+   padding-right: 10px;
+ }
+ /*Stacks everything in a column under 600px*/
+ @media only screen and (max-width: 600px) {
+      #zen-intro {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-bottom: 20px;
+   }
+ 
+   
+ }
+ 
+ #zen-supporting {
+   background-color: #122;
+   border-radius: 35px;
+   padding: 10px;  
+ }
+ 
+ #zen-participation a {
+   text-decoration: none;
+   color: orange;
+   font-weight: bold;
+ }
+ #zen-requirements a {
+   text-decoration: none;
+   color: orange;
+   font-weight: bold;
+ }
+ 
+ /*Footer gets a bit different treatment from everything else*/
+ 
+ footer {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ footer a {
+   text-decoration: none;
+   color: black;
+   padding: 7px;
+   background-color: #f1f1f1;
+   border-radius: 15px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
