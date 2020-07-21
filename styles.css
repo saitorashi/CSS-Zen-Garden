@@ -13,8 +13,9 @@
 
 #zen-intro {
  display: flex;
- background-color: rgba(34, 34, 68, 0.7);
+ background-color: rgba(34, 34, 68, 0.6);
  border-radius: 35px;
+  margin-left: 250px;
 
 }
 
@@ -27,7 +28,8 @@ h1 {
  font-size: 250%;
  text-align: center;
  font-family: 'Nova Square', cursive;
- color: #f09f05;
+ color: lightblue;
+
 
 }
 
@@ -39,7 +41,7 @@ h2 {
 h2 abbr {
  color: #f09;
 }
-
+/* Links flash red when hover over */
 h2 abbr:hover {
  color: red;
  animation-name: grow2;
@@ -71,33 +73,40 @@ transition: all 0.25s ease-out;
 }
 
 
-
+/*Makes all the headings light-blue*/
 
 h3 {
  font-family: 'Nova Square';
  font-size: 130%;
- color: #f09f05;
+ color: lightblue;
  text-align: center;
 }
 
 #zen-preamble {
  padding-right: 10px;
 }
-/*Stacks everything in a column under 600px*/
-@media only screen and (max-width: 600px) {
+/*Stacks everything in a column under 800px*/
+@media only screen and (max-width: 800px) {
     #zen-intro {
       flex-direction: column;
       padding-left: 10px;
       padding-bottom: 20px;
+      margin-left: 0px;
+      
  }
-
  
 }
 
 #zen-supporting {
- background-color: rgba(17,34,34,0.7);
+ background-color: rgba(17,34,34,0.6);
  border-radius: 35px;
  padding: 10px;  
+  margin-left: 250px;
+}
+@media only screen and (max-width: 800px) {
+  #zen-supporting {
+    margin-left: 0px;
+  }
 }
 /*Hyperlink colors and animations*/
 
@@ -153,9 +162,56 @@ footer a {
  border-radius: 25px;
 }
 
+/* Sidebar settings*/
+.wrapper {
+  background-color: #335;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 
+}
 
+.design-selection li, .zen-resources li {
+    width: 70%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+  font-size: 75%;
+}
 
+.design-name {
+  font-style: italic;
+}
+
+.designer-name {
+  font-weight: 99;
+  color: #ffffff;
+
+}
+
+#design-selection ul li{
+display: inline-block;
+  width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: space-around;
+  }
+  .design-selection li, .zen-resources li {
+    font-size: 100%;
+    border-top: none;
+    flex-wrap: none;
+  }
+  
+}
 
 
 
