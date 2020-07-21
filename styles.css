@@ -13,7 +13,7 @@
 
 #zen-intro {
  display: flex;
- background-color: rgba(34, 34, 68, 0.6);
+ background-color: rgba(68, 68, 99, 0.6);
  border-radius: 35px;
   margin-left: 250px;
 
@@ -98,7 +98,7 @@ h3 {
 }
 
 #zen-supporting {
- background-color: rgba(17,34,34,0.6);
+ background-color: rgba(34,68,68,0.6);
  border-radius: 35px;
  padding: 10px;  
   margin-left: 250px;
@@ -124,10 +124,8 @@ a:hover {
 }
 @keyframes grow {
  from{
-   font-size: 100%;
  }
  to{
-   font-size: 101%;
    color: orangered;
  }
 }
@@ -164,7 +162,7 @@ footer a {
 
 /* Sidebar settings*/
 .wrapper {
-  background-color: #335;
+  background-color: rgba(64,64,80,0.7);
   width: 250px;
   height: 100%;
   position: fixed;
@@ -177,7 +175,7 @@ footer a {
     width: 70%;
     border-top: solid 1px #d9e3dc;
     color: #c0cac3;
-  font-size: 75%;
+  font-size: 85%;
 }
 
 .design-name {
